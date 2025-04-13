@@ -18,7 +18,15 @@ def get_transcript(video_id):
         transcript = YouTubeTranscriptApi.get_transcript(
             video_id, 
             languages=['en', 'hi', 'en', 'en-US', 'en-GB', 'en-IN', 'en-CA', 'en-AU',  # English variants
-            'hi', 'hi-IN', 'ta'],  # Specify Hindi language
+            'hi', 'hi-IN', 'ta', 'af', 'am', 'ar', 'as', 'az', 'bn', 'be', 'bs', 'bg', 'ca', 
+            'ceb', 'zh-CN', 'zh-TW', 'co', 'hr', 'cs', 'da', 'dv', 'nl', 
+            'en', 'eo', 'et', 'eu', 'fa', 'fil', 'fi', 'fr', 'fy', 'ga', 
+            'gd', 'gl', 'de', 'el', 'gu', 'ha', 'iw', 'hi', 'hu', 'id', 
+            'it', 'ja', 'kn', 'kk', 'ko', 'ky', 'lv', 'lt', 'lb', 'mk', 
+            'ml', 'mt', 'mr', 'ne', 'no', 'or', 'pl', 'pt', 'pa', 'ro', 
+            'ru', 'sr', 'sd', 'si', 'sk', 'sl', 'so', 'es', 'sw', 'sv', 
+            'tg', 'ta', 'te', 'th', 'tr', 'tk', 'uk', 'ur', 'uz', 'vi', 
+            'cy', 'yi', 'zh'],
             cookies='cookies.txt'  # Use cookies for authentication
         )
         return jsonify({
