@@ -17,7 +17,8 @@ def get_transcript(video_id):
     try:
         transcript = YouTubeTranscriptApi.get_transcript(
             video_id, 
-            languages=['en', 'hi'],  # Specify Hindi language
+            languages=['en', 'hi', 'en', 'en-US', 'en-GB', 'en-IN', 'en-CA', 'en-AU',  # English variants
+            'hi', 'hi-IN', 'ta'],  # Specify Hindi language
             cookies='cookies.txt'  # Use cookies for authentication
         )
         return jsonify({
